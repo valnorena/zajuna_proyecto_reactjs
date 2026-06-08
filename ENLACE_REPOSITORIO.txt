@@ -6,4 +6,4 @@ Evidencia: Componente frontend del proyecto formativo y proyectos de clase (list
 
 Repositorios:
 Proyecto base https://github.com/valnorena/zajuna_proyecto_base
-Proyecto ReactJS 
+Proyecto ReactJS https://github.com/valnorena/zajuna_proyecto_reactjs
