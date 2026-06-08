@@ -1,0 +1,71 @@
+.contenedor {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+
+.tabla thead {
+  background: var(--color-bg);
+}
+
+.tabla th {
+  text-align: left;
+  padding: 14px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-soft);
+}
+
+.tabla td {
+  padding: 14px 18px;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.tabla tbody tr {
+  transition: background 0.14s ease;
+}
+
+.tabla tbody tr:hover {
+  background: var(--color-bg);
+}
+
+.codigo {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.estado {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.entregada {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.pendiente {
+  background: #fff4e6;
+  color: var(--color-accent-dark);
+}
+
+.vacio {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-text-soft);
+}

@@ -1,0 +1,92 @@
+/* ============================================================
+   ESTILOS GLOBALES - LMS ZAJUNA
+   Variables de diseño centralizadas (paleta institucional SENA).
+   Centralizar los colores aquí permite cumplir el Principio de
+   Responsabilidad Única: un cambio de marca se hace en un solo lugar.
+   ============================================================ */
+
+:root {
+  /* Colores de marca SENA */
+  --color-primary: #39a900; /* Verde institucional SENA */
+  --color-primary-dark: #2e8600;
+  --color-primary-light: #e9f6e1;
+  --color-accent: #ff7900; /* Naranja institucional SENA */
+  --color-accent-dark: #e56b00;
+
+  /* Neutros */
+  --color-text: #1f2a1c;
+  --color-text-soft: #5b6b56;
+  --color-bg: #f6f8f4;
+  --color-surface: #ffffff;
+  --color-border: #e3e9df;
+
+  /* Estados */
+  --color-success: #39a900;
+  --color-danger: #d92d20;
+  --color-warning: #f79009;
+  --color-info: #1570ef;
+
+  /* Tipografía */
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Public Sans', sans-serif;
+
+  /* Espaciado y formas */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 1px 2px rgba(31, 42, 28, 0.06);
+  --shadow-md: 0 6px 18px rgba(31, 42, 28, 0.08);
+  --shadow-lg: 0 14px 40px rgba(31, 42, 28, 0.12);
+
+  /* Medidas de layout */
+  --navbar-height: 64px;
+  --sidebar-width: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  min-height: 100%;
+}

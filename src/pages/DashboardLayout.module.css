@@ -1,0 +1,39 @@
+.contenedor {
+  min-height: 100vh;
+}
+
+.areaPrincipal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: var(--sidebar-width);
+  padding-top: var(--navbar-height);
+}
+
+.contenido {
+  flex: 1;
+  padding: 28px 32px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.overlay {
+  display: none;
+}
+
+/* Responsive: en móvil el contenido ocupa todo el ancho */
+@media (max-width: 768px) {
+  .areaPrincipal {
+    margin-left: 0;
+  }
+  .contenido {
+    padding: 22px 16px;
+  }
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: var(--navbar-height) 0 0 0;
+    background: rgba(31, 42, 28, 0.4);
+    z-index: 15;
+  }
+}

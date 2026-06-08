@@ -1,0 +1,27 @@
+/* Estilos reutilizables para la cabecera y secciones de las páginas internas */
+
+.encabezado {
+  margin-bottom: 22px;
+}
+
+.titulo {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  color: var(--color-text-soft);
+}
+
+/* Cuadrícula responsiva para tarjetas (cursos) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Espacio para el aviso/alerta sobre el contenido */
+.aviso {
+  margin-bottom: 16px;
+}

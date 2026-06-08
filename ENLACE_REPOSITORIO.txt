@@ -1,0 +1,9 @@
+ENLACE DEL REPOSITORIO - GA7-220501096-AA4-EV03
+=================================================
+
+Aprendiz: Valentina Noreña Gomez
+Evidencia: Componente frontend del proyecto formativo y proyectos de clase (listas de chequeo)
+
+Repositorios:
+Proyecto base https://github.com/valnorena/zajuna_proyecto_base
+Proyecto ReactJS 

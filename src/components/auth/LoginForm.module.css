@@ -1,0 +1,31 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.boton {
+  margin-top: 6px;
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+  transition: background 0.18s ease, transform 0.1s ease;
+}
+
+.boton:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+}
+
+.boton:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.boton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

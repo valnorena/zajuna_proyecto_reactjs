@@ -1,0 +1,58 @@
+.sidebar {
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: 22px 14px;
+  overflow-y: auto;
+  z-index: 20;
+  transition: transform 0.25s ease;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.enlace {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--color-text-soft);
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.enlace:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.icono {
+  font-size: 1.1rem;
+}
+
+/* Estilo del enlace de la sección activa */
+.activo {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+/* Responsive: el menú se oculta fuera de pantalla y se desliza al abrirlo */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-lg);
+  }
+  .abierto {
+    transform: translateX(0);
+  }
+}

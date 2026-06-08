@@ -1,0 +1,70 @@
+.pagina {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(57, 169, 0, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(255, 121, 0, 0.1), transparent 45%),
+    var(--color-bg);
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 410px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 34px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.logoIcono {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.4rem;
+  border-radius: var(--radius-md);
+}
+
+.logoTexto {
+  font-size: 1.8rem;
+  color: var(--color-primary-dark);
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  margin-bottom: 24px;
+}
+
+.alerta:not(:empty) {
+  margin-bottom: 16px;
+}
+
+.ayuda {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+}
+
+@media (max-width: 480px) {
+  .tarjeta {
+    padding: 32px 22px;
+  }
+}
